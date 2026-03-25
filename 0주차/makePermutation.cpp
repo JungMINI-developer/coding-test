@@ -23,7 +23,7 @@ void makePermutation(int n, int r, int depth) {
 }
 
 int main() {
-  for (int i = 0; i <= 3; i++) {
+  for (int i = 0; i < 3; i++) {
     v.push_back(i);
   }
   makePermutation(3, 3, 0);
