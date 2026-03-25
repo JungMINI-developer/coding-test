@@ -1,10 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
+
+// 배열의 경우
 int main() {
-  // 배열의 경우
-  // int a[] = {1, 2, 3};
-  // 벡터의 경우
-  vector<int> a = {1, 2, 3};
+  int a[] = {1, 2, 3};
   do {
     for (int i : a) cout << i << " ";
     cout << "\n";
@@ -13,8 +12,16 @@ int main() {
     //   cout << a[i] << " ";
     // }
     // cout << "\n";
-    // 배열의 경우
-    // } while (next_permutation(&a[0], &a[0] + 3));
-    // 벡터의 경우
-  } while (next_permutation(a.begin(), a.end()));
+  } while (next_permutation(&a[0], &a[0] + 3));
 }
+
+// 벡터의 경우
+// int main() {
+//   vector<int> a = {1, 2, 3};
+//   do {
+//     for (int i : a) {
+//       cout << i << " ";
+//     }
+//     cout << "\n";
+//   } while (next_permutation(a.begin(), a.end()));
+// }
