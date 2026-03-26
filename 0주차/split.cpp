@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 vector<string> split(const string& input, string delimiter) {
   vector<string> result;
   auto start = 0;
