@@ -49,10 +49,13 @@ int main() {
   cin >> n;
   for (int i = 0; i < n; i++) {
     cin >> s;
+    // cnt 아스키코드를 활용하여 좌표 이동.
+    // ex) b가 첫글짜면 cnt[1]로 들어감  -> 문자를 숫자로
     cnt[s[0] - 'a']++;
   }
   for (int i = 0; i < 26; i++) {
     if (cnt[i] >= 5) {
+      // 숫자를 문자열로
       ret += (i + 'a');
     }
   }
