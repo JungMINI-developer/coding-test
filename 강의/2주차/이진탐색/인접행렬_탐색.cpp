@@ -23,6 +23,7 @@ int main() {
   a[2][1] = 1;
   a[3][1] = 1;
   a[4][3] = 1;
+  
   for (int i = 0; i < V; i++) {
     for (int j = 0; j < V; j++) {
       if (a[i][j] && visited[i] == 0) {
