@@ -4,7 +4,7 @@ const int n = 4;
 string a[n] = {"사과","딸기", "포도", "배"};
 
 void go(int num){
-  string ret = "";
+  string ret = ""; //변수 초기화
   for(int i=0; i < 4; i++){
     if(num & (1 << i)) ret += a[i] + " ";
   }
@@ -14,6 +14,6 @@ void go(int num){
 
 int main(){
   for(int i=1; i < n; i++){
-    go(1 | (1 << i));
+    go(1 | (1 << i)); 
   }
 }
